@@ -825,4 +825,13 @@ var THEMEMASCOT = {};
         enable: ["facebook", "whatsapp", "instagram", "twitter"],
       });
 
+      $("#socialShare2").socialSharingPlugin({
+        url: window.location.href,
+        title: $('meta[property="og:title"]').attr("content"),
+        description: $('meta[property="og:description"]').attr("content"),
+        img: $('meta[property="og:image"]').attr("content"),
+        responsive: true,
+        enable: ["facebook", "whatsapp", "instagram", "twitter"],
+      });
+
 })(window.jQuery);
