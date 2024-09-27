@@ -321,7 +321,7 @@ ul {
 b,
 strong {
     color: #333;
-    font-weight: var(--body-font-weight-bold);
+    font-weight: 700;
 }
 
 iframe {
@@ -1917,7 +1917,7 @@ Scroll To Top style
     position: relative;
     font-size: 12px;
     line-height: 15px;
-    padding: 23px 53px;
+    padding: 18px 44px;
     font-family: var(--text-font);
     font-weight: 600;
     overflow: hidden;
@@ -3280,7 +3280,7 @@ Main Header
 
 @media (max-width: 1399.98px) {
     .main-menu .navigation {
-        margin: 0 0 0 70px;
+        margin: 0 0 0 80px;
     }
 }
 
@@ -19350,7 +19350,15 @@ Page Title
     line-height: 50px;
     margin-top: -16px;
 }
-
+@media (max-width: 767.98px){
+    .section-gap-tb {
+        padding: 60px 0 !important;
+    }
+    .error-page__inner .error-page__sub-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
 .error-page__inner .error-page__text {
     font-size: 20px;
     line-height: 30px;
@@ -21330,6 +21338,18 @@ Sidebar
 ==================================
 */
 
+.section-gap-t{
+    padding-top: 100px;
+}
+
+.section-gap-b{
+    padding-bottom: 100px;
+}
+
+.section-gap-tb{
+    padding: 100px 0;
+}
+
 #cart-count {
     position: absolute;
     color: var(--theme-color-light);
@@ -21348,4 +21368,11 @@ Sidebar
     margin: 0 16px 0 0;
     font-size: 15px;
     color: var(--theme-color2);
+}
+
+.thk-area table.tbl-shopping-cart td{
+    padding: 10px 30px;
+}
+.thk-area table.tbl-shopping-cart img{
+    width: 33px;
 }
