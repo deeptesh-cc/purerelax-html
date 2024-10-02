@@ -68,7 +68,7 @@ function loadCart() {
                                     <button class="quantity-increase" data-id="${item.id}">+</button>
                                 </div>
                                 </div>
-                                <button class="remove-from-cart" data-id="${item.id}"><i class="fal fa-trash"></i></button>
+                                <button class="remove-from-cart fal fa-trash" data-id="${item.id}"></button>
                                 </div>
                               </div>
                             </div>
