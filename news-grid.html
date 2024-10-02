@@ -82,12 +82,13 @@
                     <i class="icon fal fa-search"></i>
                     </button>
 
-                    <a class="ui-btn search-btn" href="shop-cart.html">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" class="ui-btn">
                         <span id="cart-count" class="cart-count">0</span>
                         <i class="icon fal fa-shopping-cart"></i>
-                    </a>
+                    </button>
 
-                    <a class="ui-btn search-btn" href="wishlist-page.html">
+                    <a class="ui-btn" href="wishlist-page.html">
+                        <span id="wish-count">0</span>
                         <i class="icon fal fa-heart"></i>
                     </a>
                     <div class="divider"></div>
@@ -142,54 +143,31 @@
         </div>
     </div>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+        <h4 class="offcanvas-title">Your Cart!</h4>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pt-0">
+         <div id="cart-items" class="cart-scroll-area custom-scroll">
 
-    <div class="sticky-header">
-        <div class="auto-container">
-            <div class="inner-container">
+         </div>
+         <div id="cart-total-area">
+            <p class="my-3 p-2 border-top d-flex justify-content-between text-dark">Subtotal: <strong>$<strong id="cart-total">0</strong></strong></p>
 
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt></a>
-                </div>
-
-                <div class="nav-outer">
-
-                    <nav class="main-menu">
-                        <div class="navbar-collapse show collapse clearfix">
-                            <ul class="navigation clearfix">
-
-                            </ul>
-                        </div>
-                    </nav>
-
-                    <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-                </div>
-
-                <div class="outer-box">
-
-                    <button class="ui-btn search-btn">
-                        <i class="icon fal fa-search"></i>
-                        </button>
-
-                        <a class="ui-btn search-btn" href="shop-cart.html">
-                            <span id="cart-count" class="cart-count">0</span>
-                            <i class="icon fal fa-shopping-cart"></i>
-                        </a>
-
-                        <a class="ui-btn search-btn" href="wishlist-page.html">
-                            <i class="icon fal fa-heart"></i>
-                        </a>
-
-                    <div class="divider"></div>
-                    <!-- 
-                    <div class="btn-box">
-                        <a href="page-contact.html" class="theme-btn btn-style-one btn-style-transparent"><span class="btn-title">CONTACT US</span></a>
-                    </div> -->
-
-                    <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-                </div>
+            <div class="row row-cols-1 row-cols-sm-2 g-2">
+                <div class="col">
+                    <a href="shop-cart.html" class="theme-btn btn-style-two w-100"><span class="btn-title">view cart</span></a>
+                    </div>
+            <div class="col">
+            <a href="shop-checkout.html" class="theme-btn btn-style-two w-100"><span class="btn-title">checkout</span></a>
+            </div>
             </div>
         </div>
-    </div>
+      </div> 
+    </div>  
+
+
 
 </header>
 
@@ -439,6 +417,7 @@
 <script src="js/ScrollTrigger.min.js"></script>
 <script src="js/splitType.js"></script>
 <script src="js/socialSharing.js"></script>
+<script src="js/ecom.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
