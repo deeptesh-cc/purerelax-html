@@ -51,7 +51,7 @@ var THEMEMASCOT = {};
                 sticky_header.removeClass("fixed-header animated slideInDown");
                 scrollLink.fadeOut(300);
             }
-            if (windowpos > 1) {
+            if (windowpos > 100) {
                 siteHeader.addClass("fixed-header");
             } else {
                 siteHeader.removeClass("fixed-header");
@@ -833,5 +833,18 @@ var THEMEMASCOT = {};
         responsive: true,
         enable: ["facebook", "whatsapp", "instagram", "twitter"],
       });
+
+
+    //   window.addEventListener("scroll", function () {
+    //     // Grab the first element with the class 'header'
+    //     const header = document.querySelector(".header-lower"),
+    //       scroll = window.pageYOffset || document.body.scrollTop;
+      
+    //     if (scroll > 100) {
+    //       header.className = "header-lower scrolled";
+    //     } else if (scroll <= 100) {
+    //       header.className = "header-lower";
+    //     }
+    //   });
 
 })(window.jQuery);
