@@ -4027,15 +4027,8 @@ Main Header
     width: 30px;
     height: 30px;
     line-height: 30px;
-    margin-right: 25px;
     padding: 0;
     color: var(--theme-color-dark);
-}
-
-@media (max-width: 1399.98px) {
-    .main-header .header-lower .outer-box .ui-btn, .main-header .sticky-header .outer-box .ui-btn {
-        margin-right: 0;
-    }
 }
 
 @media (max-width: 575.98px) {
@@ -12085,7 +12078,7 @@ Section Title
     border-radius: 10px;
     position: relative;
     background-color: var(--theme-color1);
-    padding: 80px 85px 100px;
+    padding: 80px 50px 100px;
 }
 
 @media (max-width: 1399.98px) {
@@ -14561,7 +14554,6 @@ Section Title
 }
 
 .accordion-box .block .acc-btn {
-    border-bottom: 1px solid #e1e1e1;
     position: relative;
     font-family: var(--title-font);
     font-size: 18px;
@@ -21264,8 +21256,8 @@ Sidebar
 }
 
 .contact-details__info li .icon {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     background-color: var(--theme-color1);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21279,7 +21271,9 @@ Sidebar
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
-
+.contact-details__info li h6{
+    margin-bottom: 0.5rem;
+}
 .contact-details__info li .icon span {
     color: var(--theme-color-light);
     font-size: 25px;
@@ -21355,13 +21349,13 @@ Sidebar
     position: absolute;
     color: var(--theme-color-light);
     background: var(--theme-color1);
-    padding: 0.1rem 0.35rem;
+    padding: 0.15rem 0.25rem;
     line-height: 1;
     font-weight: 600;
     border-radius: 2rem;
-    right: 0;
+    right: -3px;
     top: -3px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .socialJS a{
