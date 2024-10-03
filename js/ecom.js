@@ -418,12 +418,6 @@ document.querySelectorAll('.add-to-wishlist').forEach(button => {
 
 });
 
-// Function to load wishlist items (optional: for display purposes)
-// function loadWishlist() {
-//   let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-//   console.log('Wishlist:', wishlist);
-// }
-
 
 // Function to load and display wishlist items
 function displayWishlist() {
@@ -447,7 +441,7 @@ function displayWishlist() {
                         <div class="inner-box bg-transparent">
                             <div class="image-box">
                                 <div class="inner">
-                                    <figure class="image mb-0"><a href="product-details.html"><img src="${product.image}" alt="${product.name}"></a></figure>
+                                    <figure class="image mb-0"><img src="${product.image}" alt="${product.name}"></figure>
                                     <div class="icon-box">
                                             <button class="icon ui-btn like-btn remove-from-wishlist" data-id="${product.id}"><i class="fal fa-times"></i></button>
                                     </div>
@@ -456,7 +450,7 @@ function displayWishlist() {
                             <div class="content-box">
                                 <div class="inner">
                                     <span class="price">$${product.price}</span>
-                                    <h4 class="title"><a href="#">${product.name}</a></h4>
+                                    <h4 class="title"><a href="product-details.html">${product.name}</a></h4>
                                 </div>
                             </div>
                             
