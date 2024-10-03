@@ -3965,9 +3965,9 @@ Main Header
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
     min-width: 194px;
     height: 48px;
 }
@@ -4035,6 +4035,9 @@ Main Header
     .main-header .header-lower .outer-box .ui-btn, .main-header .sticky-header .outer-box .ui-btn {
         margin-right: 0;
         margin-left: 0;
+    }
+    .main-header .logo img{
+        max-width: 150px;
     }
 }
 
