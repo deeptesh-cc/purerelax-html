@@ -21478,7 +21478,7 @@ input[type=number] {
     background: #b30000; 
   }
 
-  #cart-items-2 .empty-cart, #checkout-items .empty-cart{
+  #cart-items-2 .empty-cart, #checkout-items .empty-cart, .empty-wishlist{
     width: 100%;
     padding: 20px;
     border: 1px solid #e4e4e4;
@@ -21486,11 +21486,10 @@ input[type=number] {
     border-radius: 10px;
   }
 
-  #cart-items-2 .empty-cart img, #checkout-items .empty-cart img{
+  #cart-items-2 .empty-cart img, #checkout-items .empty-cart img, .empty-wishlist img{
     width: auto;
     max-width: 100px;
   }
-
   .remove-from-wishlist{
     background: transparent;
     margin-top: 10px;
@@ -21513,4 +21512,11 @@ input[type=number] {
     padding: 0 44px;
     font-size: 16px;
     z-index: 1;
+  }
+
+  .offcanvas .empty-cart{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 30px;
   }

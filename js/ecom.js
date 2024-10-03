@@ -429,7 +429,12 @@ function displayWishlist() {
     wishlistContainer.innerHTML = ''; // Clear previous items
 
     if (wishlist.length === 0) {
-      wishlistContainer.innerHTML = '<p>Your wishlist is empty.</p>';
+      wishlistContainer.innerHTML = `
+      <div class="empty-wishlist text-center">
+      <img src="images/resource/wishlist-empty.svg" alt="">
+      <h3 class="mt-3 mb-2">Your wishlist is empty.</h3>
+       <p class="lead">No items added in wishlist</p>
+      </div>`;
       return;
     }
   }
