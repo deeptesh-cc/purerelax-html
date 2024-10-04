@@ -181,6 +181,7 @@ function loadCart() {
                 <img src="images/icons/empty-cart.png" alt="" class="mb-4" width="110">
                   <h3>Your cart is empty!</h3>
                   <p>It looks like you haven't added any items to your cart yet.</p>
+                  <a href="shop-products.html" class="theme-btn btn-style-one"><span class="btn-title">Shop Now</span></a>
               </div>
           `;
       }
@@ -191,6 +192,7 @@ function loadCart() {
                 <img src="images/icons/empty-cart.png" alt="" class="mb-4" width="110">
                   <h3 class="p-0 mb-0">Your cart is empty!</h3>
                   <p>It looks like you haven't added any items to your cart yet.</p>
+                  <a href="shop-products.html" class="theme-btn btn-style-one mt-4"><span class="btn-title">Shop Now</span></a>
               </div>
           `;
           }
@@ -201,6 +203,7 @@ function loadCart() {
                 <img src="images/icons/empty-cart.png" alt="" class="mb-4" width="110">
                   <h3 class="p-0 mb-0">No Items Added!</h3>
                   <p>It looks like you haven't added any items to your cart yet.</p>
+                  
               </div>
           `;
           }
@@ -434,6 +437,7 @@ function displayWishlist() {
       <img src="images/resource/wishlist-empty.svg" alt="">
       <h3 class="mt-3 mb-2">Your wishlist is empty.</h3>
        <p class="lead">No items added in wishlist</p>
+       <a href="shop-products.html" class="theme-btn btn-style-one"><span class="btn-title">Shop Now</span></a>
       </div>`;
       return;
     }
