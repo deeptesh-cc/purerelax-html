@@ -1917,12 +1917,12 @@ Scroll To Top style
     position: relative;
     font-size: 12px;
     line-height: 15px;
-    padding: 18px 44px;
+    padding: 18px 44px !important;
     font-family: var(--text-font);
     font-weight: 600;
     overflow: hidden;
     color: var(--theme-color-light);
-    background: var(--theme-color1);
+    background: var(--theme-color1) !important;
     border-radius: 3px;
     border: none;
     letter-spacing: 1px;
